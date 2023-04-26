@@ -11,3 +11,4 @@ steps:
     ls /home/saba/main.go
     cd /home/saba
     go build main.go
+    ./main
