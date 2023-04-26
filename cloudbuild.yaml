@@ -4,7 +4,7 @@ steps:
   args:
   - 'compute'
   - 'scp'
-  - 'github.com/saba1119/crudapp-cloudbuild/main.go'
+  - 'github.com/Saba1119/crudapp-cloudbuild/main.go'
   - 'root@my-instance-vm:/home/saba'
   - '--zone'
   - 'us-central1-c'
