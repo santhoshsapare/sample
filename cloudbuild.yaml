@@ -11,6 +11,5 @@ steps:
   - |
     gcloud auth print-access-token 
     gcloud compute scp main.go root@my-instance-vm:/home/saba --zone=us-central1-c
-    gcloud compute ssh root@my-instance-vm --command "ls /home/saba/main.go"
-    gcloud compute ssh root@my-instance-vm --command "cd /home/saba && go build main.go"
-
+    gcloud compute ssh root@my-instance-vm --zone=us-central1-c --command "ls /home/saba/main.go"
+    gcloud compute ssh root@my-instance-vm --zone=us-central1-c --command "cd /home/saba && go build main.go"
