@@ -119,6 +119,6 @@ func main() {
 	}).Methods("DELETE")
 
 	// Start server
-	log.Println("Server listening on port 8000")
+	log.Println("Server listening on port 8000 ")
 	log.Fatal(http.ListenAndServe(":8000", router))
 }
