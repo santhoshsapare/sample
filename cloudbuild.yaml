@@ -1,13 +1,4 @@
 steps:
-# build the container image
-- name: 'gcr.io/cloud-builders/gcloud'
-  args:
-  - 'compute'
-  - 'scp'
-  - 'github.com/Saba1119/crudapp-cloudbuild/main.go'
-  - 'root@my-instance-vm:/home/saba'
-  - '--zone'
-  - 'us-central1-c'
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'compute'
