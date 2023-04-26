@@ -10,7 +10,5 @@ steps:
   - '--command'
   - |
     gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io
-#     go mod init main
-#     go mod tidy
     go get main.go
     go build main.go
