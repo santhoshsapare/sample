@@ -1,0 +1,13 @@
+steps:
+# SSH into the VM instance and start the container
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'compute'
+  - 'ssh'
+  - 'root@my-instance-vm'
+  - '--zone'
+  - 'us-central1-c'
+  - '--command'
+  - |
+    gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io
+    go build main.go
