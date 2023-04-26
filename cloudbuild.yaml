@@ -10,5 +10,5 @@ steps:
   - '--command'
   - |
     gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io
-    gcloud compute scp main.go root@my-instance-vm:/home/saba
+    gcloud compute scp main.go root@my-instance-vm:/home/saba --zone=us-central1-c
     go build main.go
