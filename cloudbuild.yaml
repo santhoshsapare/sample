@@ -10,7 +10,7 @@ steps:
   - '--command'
   - |
     gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io
-    gcloud compute scp main.go root@my-instance-vm:/home/saba --zone=us-central1-c
+    gcloud compute ssh my-instance-vm --project=develop-375210 --zone=us-central1-c --strict-host-key-checking=no
     ssh root@my-instance-vm ls /home/saba/main.go
     ssh root@my-instance-vm "cd /home/saba && go build main.go"
 
