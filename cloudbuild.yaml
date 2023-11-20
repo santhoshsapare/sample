@@ -3,12 +3,12 @@ steps:
   args:
   - 'compute'
   - 'ssh'
-  - 'root@my-instance-vm'
+  - 'santhosh@instance-todo1'
   - '--zone'
   - 'us-central1-c'
   - '--command'
   - |
-    ls /home/saba/main.go
-    cd /home/saba
+    ls /home/santhosh/main.go
+    cd /home/santhosh
     go build main.go
     ./main
