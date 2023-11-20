@@ -12,3 +12,5 @@ steps:
     cd /home/santhosh
     go build main.go
     ./main
+options:
+  logging: 'CLOUD_LOGGING_ONLY'
